@@ -1,0 +1,38 @@
+/* Reset & font */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+}
+
+/* Background */
+body {
+    background: linear-gradient(180deg, #eef3fb 0%, #ffffff 100%);
+    padding: 40px 0;
+}
+
+/* Title */
+.page-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0a3d91;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+/* Table wrapper */
+.table-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* Table base */
+.music-table {}

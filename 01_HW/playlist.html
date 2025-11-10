@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>My Favorite Songs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f1f1;
+    }
+
+    .table-wrapper {
+      width: 90%;
+      margin: 30px auto;
+      background: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin: 0;
+      padding: 12px 15px;
+      background: #0b74d1;
+      color: #fff;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    th {
+      background: #0b74d1;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* picture column images */
+    .song-pic {
+      width: 120px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    a {
+      color: #0b74d1;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="table-wrapper">
+    <h2>My Favorite Songs</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Song Name</th>
+          <th>Tags</th>
+          <th>Picture</th>
+          <th>Video</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Row 1 -->
+        <tr>
+          <td>Midnight Chill</td>
+          <td>Chill, Lofi</td>
+          <td>
+            <img src="https://via.placeholder.com/120x70?text=Chill" alt="Midnight Chill" class="song-pic">
+          </td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank">Watch on YouTube</a>
+          </td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+          <td>Sunset Groove</td>
+          <td>Soul, Relax</td>
+          <td>
+            <img src="https://via.placeholder.com/120x70?text=Soul" alt="Sunset Groove" class="song-pic">
+          </td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=DWcJFNfaw9c" target="_blank">Watch on YouTube</a>
+          </td>
+        </tr>
+
+        <!-- Row 3 -->
+        <tr>
+          <td>Coffee Beats</td>
+          <td>Jazzhop, Study</td>
+          <td>
+            <img src="https://via.placeholder.com/120x70?text=Jazz" alt="Coffee Beats" class="song-pic">
+          </td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=hHW1oY26kxQ" target="_blank">Watch on YouTube</a>
+          </td>
+        </tr>
+
+        <!-- Add more rows here -->
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
