@@ -35,4 +35,36 @@ body {
 }
 
 /* Table base */
-.music-table {}
+.music-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Header */
+.music-table thead {
+    background: #0b74d1;
+    color: #fff;
+}
+
+.music-table th {
+    padding: 12px;
+    font-size: 1rem;
+}
+
+/* Rows */
+.music-table td {
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    height: 240px;
+    font-size: 0.95rem;
+}
+
+/* Video frame */
+.video-frame {
+    width: 100%;
+    height: 210px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
