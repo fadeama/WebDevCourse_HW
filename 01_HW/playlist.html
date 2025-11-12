@@ -4,64 +4,58 @@
 <head>
   <meta charset="UTF-8" />
   <title>My Favorite Songs</title>
-  <!-- קישור לקובץ ה־CSS -->
   <link rel="stylesheet" href="playlist.css" />
 </head>
 
 <body>
-  <h1 class="page-title">My Favorite Songs</h1>
 
   <div class="table-container">
+    <!-- Main title -->
+    <h1 class="page-title shared-title">My Favorite Songs</h1>
+
+    <!-- Table -->
     <table class="music-table">
-      <thead>
+      <thead class="shared-title">
         <tr>
           <th>Song Name</th>
           <th>Tags</th>
           <th>Video</th>
+
         </tr>
       </thead>
       <tbody>
-        <!-- Row 1 -->
-        <tr>
-          <td>Morning Routine</td>
+        <tr class="highlight_row">
+          <td c>Morning Routine</td>
           <td>LoFi, Chill, Study</td>
           <td>
             <iframe class="video-frame" src="https://www.youtube.com/embed/5qap5aO4i9A"
-              title="Morning Routine - LoFi HipHop"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
+              title="Morning Routine - LoFi HipHop" allowfullscreen></iframe>
           </td>
         </tr>
 
-        <!-- Row 2 -->
+
         <tr>
           <td>Chill Vibes</td>
           <td>LoFi, Relax, Background</td>
           <td>
             <iframe class="video-frame" src="https://www.youtube.com/embed/f02mOEt11OQ"
-              title="Chill Vibes — Royalty Free Lofi Beat"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
+              title="Chill Vibes — Royalty Free Lofi Beat" allowfullscreen></iframe>
           </td>
         </tr>
 
-        <!-- Row 3 -->
+
         <tr>
           <td>Dreams</td>
           <td>Ambient, Chill, Focus</td>
           <td>
             <iframe class="video-frame" src="https://www.youtube.com/embed/DWcJFNfaw9c"
-              title="Dreams - Royalty Free Background Music"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
+              title="Dreams - Royalty Free Background Music" allowfullscreen></iframe>
           </td>
         </tr>
       </tbody>
     </table>
   </div>
+
 </body>
 
 </html>

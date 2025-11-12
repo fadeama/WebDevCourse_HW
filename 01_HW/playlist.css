@@ -12,18 +12,7 @@ body {
     padding: 40px 0;
 }
 
-/* Title */
-.page-title {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #0a3d91;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    letter-spacing: 0.6px;
-}
-
-/* Table wrapper */
+/* Outer container */
 .table-container {
     width: 95%;
     max-width: 1200px;
@@ -32,6 +21,28 @@ body {
     border-radius: 14px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     overflow: hidden;
+    padding-bottom: 20px;
+    /* Adds a bit of spacing inside */
+}
+
+/* Shared design for title + table header */
+.shared-title {
+    background-color: #0b74d1;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    padding: 12px 0;
+
+}
+
+/* Main title only */
+.page-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    /* <-- creates the space between title and table */
+    border-radius: 8px 8px 0 0;
 }
 
 /* Table base */
@@ -41,7 +52,7 @@ body {
     text-align: center;
 }
 
-/* Header */
+/* Table header */
 .music-table thead {
     background: #0b74d1;
     color: #fff;
@@ -52,7 +63,7 @@ body {
     font-size: 1rem;
 }
 
-/* Rows */
+/* Table rows */
 .music-table td {
     border-top: 1px solid #ddd;
     padding: 10px;
@@ -67,4 +78,11 @@ body {
     border: none;
     border-radius: 10px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.highlight_row {
+    background-color: skyblue;
+    color: #003366;
+    font-weight: bold;
+    font-size: 2.0rem;
 }
