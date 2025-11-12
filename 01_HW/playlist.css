@@ -86,3 +86,7 @@ body {
     font-weight: bold;
     font-size: 2.0rem;
 }
+
+.youTube-link:hover {
+    color: red;
+}
