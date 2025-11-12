@@ -1,0 +1,97 @@
+/* Page background and centering */
+body {
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(180deg, #e6f0ff 0%, #ffffff 100%);
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* Page title */
+h1 {
+    color: #0b3d91;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Contact table card */
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    width: 480px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+table:hover {
+    transform: translateY(-5px);
+}
+
+/* Header row */
+th {
+    background: #0bd12c;
+    color: white;
+    font-size: 1.2rem;
+    padding: 14px;
+    border: none;
+    letter-spacing: 0.5px;
+}
+
+/* Data cells */
+td {
+    padding: 14px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 0.95rem;
+    text-align: left;
+    color: #333;
+}
+
+/* Last cell without border */
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Inputs and textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #0b74d1;
+    box-shadow: 0 0 5px rgba(11, 116, 209, 0.3);
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 90px;
+}
+
+/* Button */
+.btn {
+    background: #0b74d1;
+    color: rgb(171, 18, 18);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.25s ease;
+}
+
+.btn:hover {
+    background: #094f91;
+}

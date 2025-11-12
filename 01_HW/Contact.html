@@ -1,0 +1,64 @@
+</style>
+</head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<link rel="stylesheet" href="contact.css">
+
+<body>
+    <h1>Contact</h1>
+
+    <table border="1">
+        <tr>
+            <th colspan="2">Send a Message</th>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" id="email"></td>
+        </tr>
+        <tr>
+            <td>Phone:</td>
+            <td><input type="tel" id="phone"></td>
+        </tr>
+        <tr>
+            <td>Subject:</td>
+            <td><input type="text" id="subject"></td>
+        </tr>
+        <tr>
+            <td>Message:</td>
+            <td><textarea id="message"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center;">
+                <button class="btn" onclick="showAlert()">Send Message</button>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function showAlert() {
+
+
+            const url = window.location.href;
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+
+            const info =
+                "DEBUG INFO\n\n" +
+                "Name: " + name + "\n" +
+                "Email: " + email + "\n" +
+                "Phone: " + phone + "\n" +
+                "Subject: " + subject + "\n" +
+                "Message:\n" + message
+            alert(info);
+        }
+    </script>
+</body>
+
+</html>
