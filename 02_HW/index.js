@@ -27,8 +27,8 @@ function calculate() {
     let num2 = parseInt(txt2Text);
 
     const op = document.getElementById("ddlOp").value;
-    let res;
 
+    let res;
     switch (op) {
         case "add": res = num1 + num2; break;
         case "sub": res = num1 - num2; break;
@@ -37,7 +37,11 @@ function calculate() {
     }
 
     lblRes.innerText = res;
+
+    // כתיבה ללוג (append = true)
+    print(`${num1} ${op} ${num2} = ${res}`, true);
 }
+
 
 
 
@@ -53,13 +57,21 @@ btn2.addEventListener("click", () => {
 
 //}
 
-function print(msg) {
-    // -- get text area elemnt refrence
+function print(msg, append = false) {
     const ta = document.getElementById("output");
-    // write mesge to text area
-    if (ta) ta.value = msg;
-    else console.log(msg);
+
+    if (!ta) {
+        console.log(msg);
+        return;
+    }
+
+    if (append) {
+        ta.value += msg + "\n";  // הוספה לשורה אחרונה
+    } else {
+        ta.value = msg + "\n";   // איפוס התיבה וכתיבה מחדש
+    }
 }
+
 
 // =============================================
 // STEP 1: JS NATIVE TYPES, USEFUL TYPES & OPERATIONS
