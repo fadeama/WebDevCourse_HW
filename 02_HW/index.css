@@ -1,0 +1,25 @@
+body {
+    background: #111;
+    color: hotpink;
+    font-size: 1.3rem;
+}
+
+.box {
+    background: #1b1b1b;
+    padding: 25px;
+    border-radius: 18px;
+    width: 500px;
+    margin: auto;
+}
+
+.form-control,
+.form-select,
+textarea {
+    background: #000;
+    color: hotpink;
+    border: 1px solid hotpink;
+}
+
+hr {
+    border-top: 1px dashed hotpink !important;
+}

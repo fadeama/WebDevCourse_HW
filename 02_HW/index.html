@@ -1,66 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootstrap Calculator</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <button onclick="demoNative()">Native Types</button>
 
-    <button id="btn2"> Register Click From Code </button>
-    <br>
+    <div class="container mt-4">
 
-    <hr>
+        <div class="box">
 
-    <table>
+            <!-- Row 1 -->
+            <div class="row mb-3">
 
-        <tr>
+                <div class="col-12 col-md-5 mb-2">
+                    <label>מספר ראשון</label>
+                    <input id="txt1" type="text" class="form-control">
+                </div>
 
-            <td style="padding:5px">
-                <input id="txt1" type="text" style="width:200px">
+                <div class="col-12 col-md-5 mb-2">
+                    <label>מספר שני</label>
+                    <input id="txt2" type="text" class="form-control">
+                </div>
 
-            </td>
+            </div>
 
-            <td style="padding: 5px;">
-                <select id="ddlOp" style="width:60px">
-                    <option value="add">+</option>
-                    <option value="sub">-</option>
-                    <option value="mul">*</option>
-                    <option value="div">/</option>
-                </select>
-            </td>
+            <!-- Row 2 -->
+            <div class="row mb-3">
 
+                <div class="col-12 col-md-5 mb-2">
+                    <label>בחר פעולה</label>
+                    <select id="ddlOp" class="form-select">
+                        <option value="add">+</option>
+                        <option value="sub">-</option>
+                        <option value="mul">*</option>
+                        <option value="div">/</option>
+                    </select>
+                </div>
 
-            </td>
+                <div class="col-12 col-md-5 d-flex align-items-end mb-2">
+                    <button id="btnCalc" class="btn btn-light w-100">=</button>
+                </div>
 
-            <td style="padding:5px">
-                <input id="txt2" type="text" style="width:200px">
-            </td>
+            </div>
 
-            <td style="padding: 5px;">
-                <button id="btnCalc">=</button>
-            </td>
+            <hr class="border-light">
 
-            <td style="padding: 5px;">
+            <!-- Result -->
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    <label>תוצאה</label>
+                    <h3 id="lblRes"></h3>
+                </div>
+            </div>
 
-                <h3 id="lblRes"></h3>
-            </td>
-        </tr>
+            <hr class="border-light">
 
-    </table>
+            <!-- Logs -->
+            <div class="row">
+                <div class="col-12">
+                    <label>לוגים</label>
+                    <textarea id="output" class="form-control" style="height:150px;"></textarea>
+                </div>
+            </div>
 
-    </hr>
+        </div>
 
-    </br>
+    </div>
 
-
-    <textarea id="output" style="width:70%;   height:600px;"> </textarea>
-
+    <script src="index.js"></script>
 </body>
-
-<script src="index.js"></script>
 
 </html>
